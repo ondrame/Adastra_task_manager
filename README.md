@@ -1,14 +1,19 @@
 # Adastra_task_manager
 
 
-Simple task manager written in Swift.
 
-Features : - saving, deleting and editing tasks (and also cateogries of course)
-           - filter tasks
-           - option to mark task as completed
-           - local notification at dead-line date
-           - option to activate / deactivate local notifictions
-           
-           
-           
- Working on every iPhone with iOS 11 and 12 (iPhone 5s and later).          
+
+Simple task manager for iOS written in Swift
+
+Features :
+
+Saving, deleting and editing tasks (and also cateogries of course).
+Filter tasks
+Option to mark task as completed
+Local notification at dead-line date
+Option to activate / deactivate local notifictions
+
+Supports iPhone 5s and later (including devices with iOS 12).
+
+
+
