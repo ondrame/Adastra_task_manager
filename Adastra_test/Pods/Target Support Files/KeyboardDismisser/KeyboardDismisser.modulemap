@@ -1,0 +1,6 @@
+framework module KeyboardDismisser {
+  umbrella header "KeyboardDismisser-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,20 @@
+PODS:
+  - EmptyDataSet-Swift (4.0.5)
+  - KeyboardDismisser (0.2.2)
+
+DEPENDENCIES:
+  - EmptyDataSet-Swift (~> 4.0.5)
+  - KeyboardDismisser
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EmptyDataSet-Swift
+    - KeyboardDismisser
+
+SPEC CHECKSUMS:
+  EmptyDataSet-Swift: a25810f50c3adfaa3840aa33ae8b5ba12ac29279
+  KeyboardDismisser: 94cbe299dea9db18ef57588e89bd6290d3e52d70
+
+PODFILE CHECKSUM: e1fcd354b45c7dfc7b8f52eeedb670a1f51517d8
+
+COCOAPODS: 1.5.3

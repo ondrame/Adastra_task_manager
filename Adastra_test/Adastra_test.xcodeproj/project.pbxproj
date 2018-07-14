@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		602677DD20F8DB360046D6D9 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602677DC20F8DB360046D6D9 /* CategoryCell.swift */; };
+		602677E020FA265E0046D6D9 /* ColorPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602677DF20FA265E0046D6D9 /* ColorPickerDelegate.swift */; };
+		602677E320FA270E0046D6D9 /* DetailsView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602677E220FA270E0046D6D9 /* DetailsView + Extension.swift */; };
+		602677E620FA5D3A0046D6D9 /* IDGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602677E520FA5D3A0046D6D9 /* IDGenerator.swift */; };
+		602839B920F1440800EB7D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602839B820F1440800EB7D88 /* AppDelegate.swift */; };
+		602839BE20F1440800EB7D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602839BC20F1440800EB7D88 /* Main.storyboard */; };
+		602839C120F1440800EB7D88 /* Adastra_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 602839BF20F1440800EB7D88 /* Adastra_test.xcdatamodeld */; };
+		602839C320F1440A00EB7D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 602839C220F1440A00EB7D88 /* Assets.xcassets */; };
+		602839C620F1440A00EB7D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602839C420F1440A00EB7D88 /* LaunchScreen.storyboard */; };
+		602839CE20F15F3B00EB7D88 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602839CD20F15F3B00EB7D88 /* Category.swift */; };
+		602839D020F1643E00EB7D88 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602839CF20F1643E00EB7D88 /* MainScreen.swift */; };
+		602839D220F1674B00EB7D88 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602839D120F1674B00EB7D88 /* Task.swift */; };
+		602839D420F16C1200EB7D88 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602839D320F16C1200EB7D88 /* AddView.swift */; };
+		60B5D9F220F4282400E8A2A8 /* CreateCategory + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B5D9F120F4282400E8A2A8 /* CreateCategory + Extension.swift */; };
+		60B5D9F520F4313D00E8A2A8 /* SettingsView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B5D9F420F4313D00E8A2A8 /* SettingsView + Extension.swift */; };
+		60D30ECB20F4D5B500750F31 /* MainScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D30ECA20F4D5B400750F31 /* MainScreenCell.swift */; };
+		60F41F4F20F252E9008CD5D8 /* Config_file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F41F4E20F252E9008CD5D8 /* Config_file.swift */; };
+		60F41F5120F28B7D008CD5D8 /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F41F5020F28B7D008CD5D8 /* ColorConverter.swift */; };
+		60F41F5320F2B4FF008CD5D8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F41F5220F2B4FF008CD5D8 /* SettingsView.swift */; };
+		60F41F5520F2BA30008CD5D8 /* CreateCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F41F5420F2BA30008CD5D8 /* CreateCategoryView.swift */; };
+		60F41F5720F2BE62008CD5D8 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F41F5620F2BE62008CD5D8 /* ColorPicker.swift */; };
+		60F9C37C20F54E46003F1531 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F9C37B20F54E46003F1531 /* DetailsView.swift */; };
+		60FFBD3C20F69DEB0021D185 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FFBD3B20F69DEB0021D185 /* TaskDelegate.swift */; };
+		60FFBD3E20F6A0110021D185 /* CategoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FFBD3D20F6A0110021D185 /* CategoryDelegate.swift */; };
+		60FFBD4020F6C2040021D185 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FFBD3F20F6C2040021D185 /* EditView.swift */; };
+		60FFBD4420F771BE0021D185 /* EditDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FFBD4320F771BE0021D185 /* EditDelegate.swift */; };
+		60FFBD4720F7A9F10021D185 /* ViewController + Task Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FFBD4620F7A9F10021D185 /* ViewController + Task Extension.swift */; };
+		60FFBD4920F7AA070021D185 /* ViewController + Category Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FFBD4820F7AA070021D185 /* ViewController + Category Extension.swift */; };
+		60FFBD4B20F7AB5B0021D185 /* ViewController + CATransition Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FFBD4A20F7AB5B0021D185 /* ViewController + CATransition Extension.swift */; };
+		60FFBD4D20F7B89A0021D185 /* CreateCategoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FFBD4C20F7B89A0021D185 /* CreateCategoryDelegate.swift */; };
+		EBB0C6158A755012DA5F0455 /* Pods_Adastra_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0E434C8EF6047674F08307 /* Pods_Adastra_test.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		602677DC20F8DB360046D6D9 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		602677DF20FA265E0046D6D9 /* ColorPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerDelegate.swift; sourceTree = "<group>"; };
+		602677E220FA270E0046D6D9 /* DetailsView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailsView + Extension.swift"; sourceTree = "<group>"; };
+		602677E520FA5D3A0046D6D9 /* IDGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDGenerator.swift; sourceTree = "<group>"; };
+		602839B520F1440800EB7D88 /* Adastra_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adastra_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		602839B820F1440800EB7D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		602839BD20F1440800EB7D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		602839C020F1440800EB7D88 /* Adastra_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Adastra_test.xcdatamodel; sourceTree = "<group>"; };
+		602839C220F1440A00EB7D88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		602839C520F1440A00EB7D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		602839C720F1440A00EB7D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		602839CD20F15F3B00EB7D88 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		602839CF20F1643E00EB7D88 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		602839D120F1674B00EB7D88 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		602839D320F16C1200EB7D88 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		60B5D9F120F4282400E8A2A8 /* CreateCategory + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateCategory + Extension.swift"; sourceTree = "<group>"; };
+		60B5D9F420F4313D00E8A2A8 /* SettingsView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView + Extension.swift"; sourceTree = "<group>"; };
+		60D30ECA20F4D5B400750F31 /* MainScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCell.swift; sourceTree = "<group>"; };
+		60F41F4E20F252E9008CD5D8 /* Config_file.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config_file.swift; sourceTree = "<group>"; };
+		60F41F5020F28B7D008CD5D8 /* ColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConverter.swift; sourceTree = "<group>"; };
+		60F41F5220F2B4FF008CD5D8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		60F41F5420F2BA30008CD5D8 /* CreateCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryView.swift; sourceTree = "<group>"; };
+		60F41F5620F2BE62008CD5D8 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		60F9C37B20F54E46003F1531 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		60FFBD3B20F69DEB0021D185 /* TaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
+		60FFBD3D20F6A0110021D185 /* CategoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDelegate.swift; sourceTree = "<group>"; };
+		60FFBD3F20F6C2040021D185 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		60FFBD4320F771BE0021D185 /* EditDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDelegate.swift; sourceTree = "<group>"; };
+		60FFBD4620F7A9F10021D185 /* ViewController + Task Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Task Extension.swift"; sourceTree = "<group>"; };
+		60FFBD4820F7AA070021D185 /* ViewController + Category Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Category Extension.swift"; sourceTree = "<group>"; };
+		60FFBD4A20F7AB5B0021D185 /* ViewController + CATransition Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + CATransition Extension.swift"; sourceTree = "<group>"; };
+		60FFBD4C20F7B89A0021D185 /* CreateCategoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryDelegate.swift; sourceTree = "<group>"; };
+		692FE20D38B449666C254570 /* Pods-Adastra_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adastra_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Adastra_test/Pods-Adastra_test.debug.xcconfig"; sourceTree = "<group>"; };
+		6B67AF3A0639CAE784C509F8 /* Pods-Adastra_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adastra_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Adastra_test/Pods-Adastra_test.release.xcconfig"; sourceTree = "<group>"; };
+		DF0E434C8EF6047674F08307 /* Pods_Adastra_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adastra_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		602839B220F1440800EB7D88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB0C6158A755012DA5F0455 /* Pods_Adastra_test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18FDD64195C465E01EA7BB42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				692FE20D38B449666C254570 /* Pods-Adastra_test.debug.xcconfig */,
+				6B67AF3A0639CAE784C509F8 /* Pods-Adastra_test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2CE807D50D6E51FA9C050F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF0E434C8EF6047674F08307 /* Pods_Adastra_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		602677D820F8DA550046D6D9 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				602839CF20F1643E00EB7D88 /* MainScreen.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		602677DB20F8DAF60046D6D9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60D30ECA20F4D5B400750F31 /* MainScreenCell.swift */,
+				602677DC20F8DB360046D6D9 /* CategoryCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		602677DE20F8DEBB0046D6D9 /* AddView */ = {
+			isa = PBXGroup;
+			children = (
+				602839D320F16C1200EB7D88 /* AddView.swift */,
+			);
+			path = AddView;
+			sourceTree = "<group>";
+		};
+		602677E120FA26F30046D6D9 /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				60F9C37B20F54E46003F1531 /* DetailsView.swift */,
+				602677E220FA270E0046D6D9 /* DetailsView + Extension.swift */,
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
+		602677E420FA5D240046D6D9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				60F41F5620F2BE62008CD5D8 /* ColorPicker.swift */,
+				60F41F5020F28B7D008CD5D8 /* ColorConverter.swift */,
+				602677E520FA5D3A0046D6D9 /* IDGenerator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		602677E720FA7A600046D6D9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				602839B820F1440800EB7D88 /* AppDelegate.swift */,
+				60F41F4E20F252E9008CD5D8 /* Config_file.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		602677E820FA7A940046D6D9 /* EditView */ = {
+			isa = PBXGroup;
+			children = (
+				60FFBD3F20F6C2040021D185 /* EditView.swift */,
+			);
+			path = EditView;
+			sourceTree = "<group>";
+		};
+		602677E920FA7AB60046D6D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				602677DE20F8DEBB0046D6D9 /* AddView */,
+				60F9C37920F543C4003F1531 /* CreateCategoryView */,
+				602677E120FA26F30046D6D9 /* DetailsView */,
+				602677E820FA7A940046D6D9 /* EditView */,
+				602677D820F8DA550046D6D9 /* MainScreen */,
+				60F9C37820F543A8003F1531 /* SettingsView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		602839AC20F1440800EB7D88 = {
+			isa = PBXGroup;
+			children = (
+				602839B720F1440800EB7D88 /* Adastra_test */,
+				602839B620F1440800EB7D88 /* Products */,
+				18FDD64195C465E01EA7BB42 /* Pods */,
+				2CE807D50D6E51FA9C050F06 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		602839B620F1440800EB7D88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				602839B520F1440800EB7D88 /* Adastra_test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		602839B720F1440800EB7D88 /* Adastra_test */ = {
+			isa = PBXGroup;
+			children = (
+				602677E720FA7A600046D6D9 /* AppDelegate */,
+				602677DB20F8DAF60046D6D9 /* Cells */,
+				60FFBD3A20F69DD80021D185 /* Delegates */,
+				602677E420FA5D240046D6D9 /* Helpers */,
+				60F9C37A20F54426003F1531 /* Objects */,
+				602677E920FA7AB60046D6D9 /* Views */,
+				60FFBD4520F7A9C00021D185 /* ViewController Extensions */,
+				602839BC20F1440800EB7D88 /* Main.storyboard */,
+				602839C220F1440A00EB7D88 /* Assets.xcassets */,
+				602839C420F1440A00EB7D88 /* LaunchScreen.storyboard */,
+				602839C720F1440A00EB7D88 /* Info.plist */,
+				602839BF20F1440800EB7D88 /* Adastra_test.xcdatamodeld */,
+			);
+			path = Adastra_test;
+			sourceTree = "<group>";
+		};
+		60F9C37820F543A8003F1531 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				60F41F5220F2B4FF008CD5D8 /* SettingsView.swift */,
+				60B5D9F420F4313D00E8A2A8 /* SettingsView + Extension.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		60F9C37920F543C4003F1531 /* CreateCategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				60F41F5420F2BA30008CD5D8 /* CreateCategoryView.swift */,
+				60B5D9F120F4282400E8A2A8 /* CreateCategory + Extension.swift */,
+			);
+			path = CreateCategoryView;
+			sourceTree = "<group>";
+		};
+		60F9C37A20F54426003F1531 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				602839CD20F15F3B00EB7D88 /* Category.swift */,
+				602839D120F1674B00EB7D88 /* Task.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		60FFBD3A20F69DD80021D185 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				60FFBD3B20F69DEB0021D185 /* TaskDelegate.swift */,
+				60FFBD3D20F6A0110021D185 /* CategoryDelegate.swift */,
+				60FFBD4320F771BE0021D185 /* EditDelegate.swift */,
+				60FFBD4C20F7B89A0021D185 /* CreateCategoryDelegate.swift */,
+				602677DF20FA265E0046D6D9 /* ColorPickerDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		60FFBD4520F7A9C00021D185 /* ViewController Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60FFBD4620F7A9F10021D185 /* ViewController + Task Extension.swift */,
+				60FFBD4820F7AA070021D185 /* ViewController + Category Extension.swift */,
+				60FFBD4A20F7AB5B0021D185 /* ViewController + CATransition Extension.swift */,
+			);
+			path = "ViewController Extensions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		602839B420F1440800EB7D88 /* Adastra_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 602839CA20F1440A00EB7D88 /* Build configuration list for PBXNativeTarget "Adastra_test" */;
+			buildPhases = (
+				0C445999E08CD86A3CDC6AEA /* [CP] Check Pods Manifest.lock */,
+				602839B120F1440800EB7D88 /* Sources */,
+				602839B220F1440800EB7D88 /* Frameworks */,
+				602839B320F1440800EB7D88 /* Resources */,
+				C1F7F66FA967023630678B7C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Adastra_test;
+			productName = Adastra_test;
+			productReference = 602839B520F1440800EB7D88 /* Adastra_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		602839AD20F1440800EB7D88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Ondřej Měchura";
+				TargetAttributes = {
+					602839B420F1440800EB7D88 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 602839B020F1440800EB7D88 /* Build configuration list for PBXProject "Adastra_test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 602839AC20F1440800EB7D88;
+			productRefGroup = 602839B620F1440800EB7D88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				602839B420F1440800EB7D88 /* Adastra_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		602839B320F1440800EB7D88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602839C620F1440A00EB7D88 /* LaunchScreen.storyboard in Resources */,
+				602839C320F1440A00EB7D88 /* Assets.xcassets in Resources */,
+				602839BE20F1440800EB7D88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C445999E08CD86A3CDC6AEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Adastra_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1F7F66FA967023630678B7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Adastra_test/Pods-Adastra_test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EmptyDataSet-Swift/EmptyDataSet_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/KeyboardDismisser/KeyboardDismisser.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EmptyDataSet_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeyboardDismisser.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Adastra_test/Pods-Adastra_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		602839B120F1440800EB7D88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602677E020FA265E0046D6D9 /* ColorPickerDelegate.swift in Sources */,
+				60F41F5520F2BA30008CD5D8 /* CreateCategoryView.swift in Sources */,
+				60F41F4F20F252E9008CD5D8 /* Config_file.swift in Sources */,
+				602839D020F1643E00EB7D88 /* MainScreen.swift in Sources */,
+				602839C120F1440800EB7D88 /* Adastra_test.xcdatamodeld in Sources */,
+				60FFBD4B20F7AB5B0021D185 /* ViewController + CATransition Extension.swift in Sources */,
+				602677E620FA5D3A0046D6D9 /* IDGenerator.swift in Sources */,
+				60D30ECB20F4D5B500750F31 /* MainScreenCell.swift in Sources */,
+				60F41F5720F2BE62008CD5D8 /* ColorPicker.swift in Sources */,
+				60FFBD4720F7A9F10021D185 /* ViewController + Task Extension.swift in Sources */,
+				602677E320FA270E0046D6D9 /* DetailsView + Extension.swift in Sources */,
+				60F41F5320F2B4FF008CD5D8 /* SettingsView.swift in Sources */,
+				60B5D9F520F4313D00E8A2A8 /* SettingsView + Extension.swift in Sources */,
+				60B5D9F220F4282400E8A2A8 /* CreateCategory + Extension.swift in Sources */,
+				602677DD20F8DB360046D6D9 /* CategoryCell.swift in Sources */,
+				60FFBD4020F6C2040021D185 /* EditView.swift in Sources */,
+				602839D420F16C1200EB7D88 /* AddView.swift in Sources */,
+				602839D220F1674B00EB7D88 /* Task.swift in Sources */,
+				60F9C37C20F54E46003F1531 /* DetailsView.swift in Sources */,
+				60FFBD4420F771BE0021D185 /* EditDelegate.swift in Sources */,
+				60FFBD3C20F69DEB0021D185 /* TaskDelegate.swift in Sources */,
+				602839B920F1440800EB7D88 /* AppDelegate.swift in Sources */,
+				60F41F5120F28B7D008CD5D8 /* ColorConverter.swift in Sources */,
+				60FFBD3E20F6A0110021D185 /* CategoryDelegate.swift in Sources */,
+				602839CE20F15F3B00EB7D88 /* Category.swift in Sources */,
+				60FFBD4920F7AA070021D185 /* ViewController + Category Extension.swift in Sources */,
+				60FFBD4D20F7B89A0021D185 /* CreateCategoryDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		602839BC20F1440800EB7D88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				602839BD20F1440800EB7D88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		602839C420F1440A00EB7D88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				602839C520F1440A00EB7D88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		602839C820F1440A00EB7D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		602839C920F1440A00EB7D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		602839CB20F1440A00EB7D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 692FE20D38B449666C254570 /* Pods-Adastra_test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LA4B9TBLX7;
+				INFOPLIST_FILE = Adastra_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OMechura.Adastra-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		602839CC20F1440A00EB7D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B67AF3A0639CAE784C509F8 /* Pods-Adastra_test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LA4B9TBLX7;
+				INFOPLIST_FILE = Adastra_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OMechura.Adastra-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		602839B020F1440800EB7D88 /* Build configuration list for PBXProject "Adastra_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602839C820F1440A00EB7D88 /* Debug */,
+				602839C920F1440A00EB7D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		602839CA20F1440A00EB7D88 /* Build configuration list for PBXNativeTarget "Adastra_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602839CB20F1440A00EB7D88 /* Debug */,
+				602839CC20F1440A00EB7D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		602839BF20F1440800EB7D88 /* Adastra_test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				602839C020F1440800EB7D88 /* Adastra_test.xcdatamodel */,
+			);
+			currentVersion = 602839C020F1440800EB7D88 /* Adastra_test.xcdatamodel */;
+			path = Adastra_test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 602839AD20F1440800EB7D88 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_Adastra_test {
+  umbrella header "Pods-Adastra_test-umbrella.h"
+
+  export *
+  module * { export * }
+}
